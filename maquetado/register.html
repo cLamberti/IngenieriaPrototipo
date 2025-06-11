@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Maquetado Registro de Asociados</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' integrity='sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==' crossorigin='anonymous'/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #0d2d59;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-right: 2px solid white;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+      border: 1px solid white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .main {
+      flex-grow: 1;
+      background-color: #1a1a1a;
+      padding: 30px;
+    }
+
+    .form-container {
+      background-color: #333;
+      padding: 30px;
+      border: 2px solid white;
+    }
+
+    .form-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      border: 1px solid white;
+      padding: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      background-color: #222;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .form-group.full {
+      grid-column: 1 / 3;
+    }
+
+    .photo-upload {
+      border: 1px solid white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .photo-upload span {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+      <h2>Bienvenido</h2>
+      <ul>
+        <li>Inicio</li>
+        <li>Registro de Asociados</li>
+        <li>Registro de Congregados</li>
+        <li>Listado General</li>
+        <li>Configuración</li>
+        <li>Cerrar Sesión</li>
+      </ul>
+    </div>
+
+    <!-- Body -->
+    <div class="main">
+      <div class="form-container">
+        <div class="form-title me-auto">Registro de Asociados</div>
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Ej: Juan Pérez">
+          </div>
+
+          <div class="form-group">
+            <label>Cédula</label>
+            <input type="text" placeholder="Ej: 1-2345-6789">
+          </div>
+
+          <div class="form-group">
+            <label>Fecha de Ingreso</label>
+            <input type="date">
+          </div>
+
+          <div class="form-group">
+            <label>Correo</label>
+            <input type="email" placeholder="Ej: juan@mail.com">
+          </div>
+
+          <div class="form-group">
+            <label>Celular</label>
+            <input type="tel" placeholder="Ej: 8888-8888">
+          </div>
+
+          <div class="form-group">
+            <label>Ministerio Asignado</label>
+            <input type="text" placeholder="Ej: Evangelismo">
+          </div>
+
+          <div class="form-group full">
+            <label>Dirección</label>
+            <input type="text" placeholder="Ej: Liberia, Guanacaste">
+          </div>
+
+          <div class="photo-upload">
+            <i class="fa-solid fa-image"></i>
+            <span>Subir Foto</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

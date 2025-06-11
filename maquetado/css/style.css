@@ -8,7 +8,7 @@
     background-color: #000;
     color: white;
   }
-  .container {
+  .container-header {
     display: grid;
     grid-template-areas: 
       "header header"
@@ -17,6 +17,9 @@
     grid-template-columns: 220px 1fr;
     grid-template-rows: 80px 1fr 60px;
     height: 100vh;
+  }
+  #header-content{
+    display: flex;
   }
   header, nav, main, footer {
     border: 2px solid white;
