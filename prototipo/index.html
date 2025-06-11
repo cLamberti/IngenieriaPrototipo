@@ -2,43 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema SCRCR - Maqueta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Principal - SCRCR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="sidebar">
-    <h2>SCRCR</h2>
-    <ul>
-      <li>Inicio</li>
-      <li>Asociados</li>
-      <li>Congregados</li>
-      <li>Asistencia</li>
-      <li>Recursos Humanos</li>
-      <li>Reportes</li>
-      <li>Configuración</li>
-    </ul>
-  </div>
-
-  <div class="main">
-    <h1>Bienvenido al Sistema de Registro</h1>
-
-    <div class="card">
-      <h3>Estadísticas rápidas</h3>
-      <p>Asociados registrados: 124</p>
-      <p>Eventos este mes: 8</p>
-      <p>Permisos pendientes: 3</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-church"></i> SCRCR</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="login/login.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register/register.html">Registro</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="card">
-      <h3>Últimas actividades</h3>
-      <ul>
-        <li>Juan Pérez registró asistencia al evento "Culto Dominical"</li>
-        <li>Ana Solano solicitó permiso del 10 al 12 de junio</li>
-        <li>Se agregó un nuevo asociado: Carlos Núñez</li>
-      </ul>
-    </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Bienvenido al Sistema SCRCR</h1>
+    <p>
+      Este sistema permite gestionar los registros de asociados, congregados y recursos humanos de manera eficiente para la Iglesia Bíblica Emanuel.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 - Sistema SCRCR | Universidad Nacional
   </div>
 
 </body>
