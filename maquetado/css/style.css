@@ -1,44 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: sans-serif;
-    background-color: #000;
-    color: white;
-  }
-  .container-header {
-    display: grid;
-    grid-template-areas: 
-      "header header"
-      "sidebar main"
-      "footer footer";
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: 80px 1fr 60px;
-    height: 100vh;
-  }
-  #header-content{
-    display: flex;
-  }
-  header, nav, main, footer {
-    border: 2px solid white;
-    padding: 15px;
-  }
-  header {
-    grid-area: header;
-    background-color: #111;
-  }
-  nav {
-    grid-area: sidebar;
-    background-color: #222;
-  }
-  main {
-    grid-area: main;
-    background-color: #333;
-  }
-  footer {
-    grid-area: footer;
-    background-color: #111;
-    text-align: center;
-  }
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      border: 2px solid white;
+      padding: 20px;
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-items {  
+      display: flex;
+      gap: 20px;
+    }
+    .nav-items div:hover{
+      background-color: #a1b1ae;
+    }
+
+    .nav-items div {
+      border: 1px solid white;
+      padding: 10px 15px;
+    }
+
+    .hero {
+      border: 2px solid white;
+      background-color: #222;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin-bottom: 20px;
+    }
+
+    .content {
+      border: 2px solid white;
+      padding: 40px;
+      background-color: #333;
+      text-align: center;
+    }
+
+    .footer {
+      border: 2px solid white;
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+    }
