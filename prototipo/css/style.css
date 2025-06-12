@@ -15,7 +15,14 @@
     .navbar-brand i {
       margin-right: 8px;
     }
-
+    #logo{
+      width: 40%;
+      max-width: 275px;
+      min-width: 90px
+    }
+    #logo:hover{
+      background-color: #005599;
+    }
     .hero {
       padding: 100px 20px;
       text-align: center;
