@@ -8,7 +8,7 @@ body.login-body {
   min-height: 100vh;
 }
 
-/* Main content */
+/* Contenido principal centrado */
 .login-main {
   flex-grow: 1;
   display: flex;
@@ -17,6 +17,7 @@ body.login-body {
   padding: 40px 20px;
 }
 
+/* Caja del formulario */
 .login-box {
   background-color: white;
   color: #333;
@@ -25,6 +26,7 @@ body.login-body {
   width: 100%;
   max-width: 400px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  
 }
 
 .login-box h2 {
@@ -40,7 +42,7 @@ body.login-body {
 }
 
 .login-box input {
-  width: 100%;
+  width: 94%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -74,7 +76,7 @@ body.login-body {
   background-color: #003b8d;
 }
 
-/* navbar and footer css */
+/* Navbar y footer */
 .header {
   background-color: #003366;
   color: white;
@@ -89,7 +91,6 @@ body.login-body {
   font-size: 20px;
 }
 
-/* ✅ Fix: remove visited link styling on navbar-brand */
 .navbar-brand,
 .navbar-brand:visited {
   color: white;
