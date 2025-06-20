@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Permisos - SCRCR</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="permisos.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Bienvenido</h2>
+      <ul>
+        <li><i class="fas fa-home"></i> <a href="../../inicio.html">Inicio</a></li>
+        <li><i class="fas fa-user-tie"></i> <a href="../personal/personal.html">Gestión de Personal</a></li>
+        <li><i class="fas fa-calendar-alt"></i> <a href="../actividades/actividades.html">Registro de Actividades</a></li>
+        <li><i class="fas fa-envelope-open-text"></i> <a href="../permisos/permisos.html">Gestión de Permisos</a></li>
+        <li><i class="fas fa-file-invoice-dollar"></i> <a href="../finanzas/finanzas.html">Gestión Financiera</a></li>
+        <li><i class="fas fa-id-badge"></i> <a href="../perfil/perfil.html">Perfil</a></li>
+        <li><i class="fas fa-sign-out-alt"></i> <a href="../../login.html">Cerrar Sesión</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <div class="card">
+        <h1>Gestión de Permisos</h1>
+
+        <form class="formulario-permiso">
+          <div class="form-grupo">
+            <label for="funcionario">Nombre del funcionario:</label>
+            <input type="text" id="funcionario" name="funcionario" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipo">Tipo de permiso:</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">-- Selecciona --</option>
+              <option value="vacaciones">Vacaciones</option>
+              <option value="incapacidad">Incapacidad</option>
+              <option value="ausencia">Ausencia Justificada</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="inicio">Fecha de inicio:</label>
+            <input type="date" id="inicio" name="inicio" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="fin">Fecha de fin:</label>
+            <input type="date" id="fin" name="fin" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="motivo">Motivo / Comentario:</label>
+            <textarea id="motivo" name="motivo" rows="3" placeholder="Opcional..."></textarea>
+          </div>
+
+          <div class="form-boton">
+            <button type="submit">Enviar Solicitud</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

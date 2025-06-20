@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil - SCRCR</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="perfil.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Bienvenido</h2>
+      <ul>
+        <li><i class="fas fa-home"></i> <a href="../../inicio.html">Inicio</a></li>
+        <li><i class="fas fa-user-tie"></i> <a href="../personal/personal.html">Gestión de Personal</a></li>
+        <li><i class="fas fa-calendar-alt"></i> <a href="../actividades/actividades.html">Registro de Actividades</a></li>
+        <li><i class="fas fa-envelope-open-text"></i> <a href="../permisos/permisos.html">Gestión de Permisos</a></li>
+        <li><i class="fas fa-file-invoice-dollar"></i> <a href="../finanzas/finanzas.html">Gestión Financiera</a></li>
+        <li><i class="fas fa-id-badge"></i> <a href="../perfil/perfil.html">Perfil</a></li>
+        <li><i class="fas fa-sign-out-alt"></i> <a href="../../login.html">Cerrar Sesión</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <div class="card">
+        <h1>Mi Perfil</h1>
+
+        <div class="perfil-info">
+          <p><strong>Nombre:</strong> Isaiah Raust Dussin</p>
+          <p><strong>Rol:</strong> Administrador</p>
+        </div>
+
+        <form class="perfil-form">
+          <div class="form-grupo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" value="isaiah@example.com" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="8888-8888" />
+          </div>
+
+          <div class="form-boton">
+            <button type="submit">Guardar Cambios</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
