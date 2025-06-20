@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Personal - SCRCR</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="personal.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Bienvenido</h2>
+      <ul>
+ <li><i class="fas fa-home"></i> <a href="../../inicio.html">Inicio</a></li>
+    <li><i class="fas fa-user-tie"></i> <a href="../personal/personal.html">Gestión de Personal</a></li>
+    <li><i class="fas fa-calendar-alt"></i> <a href="../actividades/actividades.html">Registro de Actividades</a></li>
+    <li><i class="fas fa-envelope-open-text"></i> <a href="../permisos/permisos.html">Gestión de Permisos</a></li>
+    <li><i class="fas fa-file-invoice-dollar"></i> <a href="../finanzas/finanzas.html">Gestión Financiera</a></li>
+    <li><i class="fas fa-id-badge"></i> <a href="../perfil/perfil.html">Perfil</a></li>
+    <li><i class="fas fa-sign-out-alt"></i> <a href="../../login.html">Cerrar Sesión</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <div class="card">
+        <h1>Gestión de Personal</h1>
+
+        <form class="formulario-personal">
+          <div class="form-grupo">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipo">Tipo de relación:</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">-- Selecciona una opción --</option>
+              <option value="voluntario">Voluntario</option>
+              <option value="contratado">Contratado</option>
+            </select>
+          </div>
+
+          <div class="form-boton">
+            <button type="submit">Registrar Funcionario</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

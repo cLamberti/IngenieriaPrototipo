@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Actividades - SCRCR</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="actividades.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SIDEBAR FIJO -->
+    <aside class="sidebar">
+      <h2>Bienvenido</h2>
+      <ul>
+        <li><i class="fas fa-home"></i> <a href="../../inicio.html">Inicio</a></li>
+    <li><i class="fas fa-user-tie"></i> <a href="../personal/personal.html">Gestión de Personal</a></li>
+    <li><i class="fas fa-calendar-alt"></i> <a href="../actividades/actividades.html">Registro de Actividades</a></li>
+    <li><i class="fas fa-envelope-open-text"></i> <a href="../permisos/permisos.html">Gestión de Permisos</a></li>
+    <li><i class="fas fa-file-invoice-dollar"></i> <a href="../finanzas/finanzas.html">Gestión Financiera</a></li>
+    <li><i class="fas fa-id-badge"></i> <a href="../perfil/perfil.html">Perfil</a></li>
+    <li><i class="fas fa-sign-out-alt"></i> <a href="../../login.html">Cerrar Sesión</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <div class="card">
+        <h1>Registro de Actividades</h1>
+
+        <form class="formulario-actividad">
+          <div class="form-grupo">
+            <label for="nombre">Nombre de la actividad:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="duracion">Duración (horas):</label>
+            <input type="number" id="duracion" name="duracion" min="0" required>
+          </div>
+
+          <div class="form-grupo">
+            <label for="modalidad">Modalidad:</label>
+            <select id="modalidad" name="modalidad" required>
+              <option value="">-- Selecciona --</option>
+              <option value="presencial">Presencial</option>
+              <option value="virtual">Virtual</option>
+              <option value="mixta">Mixta</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="asistentes">Registrar asistencia:</label>
+            <textarea id="asistentes" name="asistentes" placeholder="Lista de asistentes o comentarios opcionales..." rows="3"></textarea>
+          </div>
+
+          <div class="form-boton">
+            <button type="submit">Guardar Actividad</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

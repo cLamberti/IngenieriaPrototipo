@@ -12,7 +12,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #04395E;
+  background: linear-gradient(to bottom, #004aad, #002b5c);
   color: white;
   padding: 20px;
 }
@@ -29,15 +29,36 @@ body {
 
 .sidebar li {
   padding: 12px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
   border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  flex: 1;
 }
 
 .sidebar li:hover {
   background-color: #062d47;
+}
+
+/* Estilos de enlaces dentro de la barra lateral */
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar ul li a:visited,
+.sidebar ul li a:hover,
+.sidebar ul li a:active {
+  color: white;
+  text-decoration: none;
 }
 
 /* Contenido principal */
